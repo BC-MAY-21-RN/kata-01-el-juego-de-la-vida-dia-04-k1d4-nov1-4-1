@@ -1,4 +1,4 @@
-class Celula {
+/*class Celula {
   constructor(life, neighbors) {
       this.life = life;
       this.neighbors = neighbors;
@@ -110,6 +110,7 @@ function iteration(EstatusCells){
     }
 }
 
+//refactor
 function countNeighborsAround(EstatusCells, neighbors, x, y){
     for (let i = -1; i <= 1; i++) {
         for (let j = -1; j <= 1; j++) {
@@ -173,4 +174,4 @@ module.exports = {
     getArrayCell,
     getNewArray,
     checkramdomGame,
-}
+}*/
