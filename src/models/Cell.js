@@ -24,17 +24,19 @@ module.exports = class Cell {
   }
 
   newGeneration(NumLifeCells, celula) {
+    let status;
     if(celula == "O" && NumLifeCells < 2 ){
-      return DEAD
+      status = DEAD
     }else if(celula == "O" && NumLifeCells > 3){
-      return DEAD
+      status = DEAD
     }else if(celula == "O" && (NumLifeCells == 2 || NumLifeCells == 3)){
-      return ALIVE
+      status = ALIVE
     }else if(celula == "." && NumLifeCells == 3){
-      return ALIVE
+      status = ALIVE
     }else if(celula == "." && NumLifeCells != 3){
-      return DEAD
+      status = DEAD
     }
+    return status;
   }
 };
 //CICLO INFINITO
